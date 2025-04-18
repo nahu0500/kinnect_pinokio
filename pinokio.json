@@ -1,0 +1,14 @@
+{
+  "name": "kinect-pose-capture",
+  "type": "app",
+  "description": "Captura de poses con Kinect v1 y envío a Blender",
+  "install": [
+    "python -m venv venv",
+    "./venv/Scripts/pip install --upgrade pip",
+    "./venv/Scripts/pip install pykinect numpy opencv-python"
+  ],
+  "run": "./venv/Scripts/python capture_pose.py",
+  "env": {
+    "PYTHONIOENCODING": "utf-8"
+  }
+}
